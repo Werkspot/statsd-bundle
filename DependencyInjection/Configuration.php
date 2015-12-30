@@ -22,7 +22,6 @@ class Configuration implements ConfigurationInterface
 
         $rootNode->children()
             ->scalarNode('application_prefix')->defaultNull()->end()
-            ->scalarNode('replace')->defaultNull()->end()
             ;
 
         // Here you should define the parameters that are allowed to

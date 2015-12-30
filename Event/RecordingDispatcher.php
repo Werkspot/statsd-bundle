@@ -105,7 +105,6 @@ class RecordingDispatcher implements EventDispatcherInterface
         return $this->originalDispatcher->hasListeners($eventName);
     }
 
-
     /**
      * {@inheritdoc}
      */

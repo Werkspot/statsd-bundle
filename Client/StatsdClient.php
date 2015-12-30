@@ -4,7 +4,6 @@ namespace Werkspot\Bundle\StatsdBundle\Client;
 
 use Domnikl\Statsd\Client;
 use Domnikl\Statsd\Connection;
-use Domnikl\Statsd\Connection\UdpSocket;
 
 class StatsdClient implements StatsdClientInterface
 {
