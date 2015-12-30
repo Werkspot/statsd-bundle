@@ -1,0 +1,14 @@
+services:
+    werkspot_statsd.client_factory:
+        class: Werkspot\Bundle\StatsdBundle\Service\LocalUdpClientFactory
+        arguments:
+          - %statsd_application_prefix%
+
+    werkspot_statsd.recording_listener:
+        class: Werkspot\Bundle\StatsdBundle\Event\RecordingDispatcher
+        public: false
+        decorates: event_dispatcher
+        decoration_inner_name: event_dispatcher.inner
+        arguments:
+          - @event_dispatcher.inner
+          - "@=service('werkspot_statsd.client_factory').getClient('symfony_events')"

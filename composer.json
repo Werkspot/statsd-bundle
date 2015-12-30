@@ -1,0 +1,38 @@
+{
+    "name": "werkspot/statsd-bundle",
+    "description": "Bundle for easy statsd metric reporting",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "keywords": [
+        "seo",
+        "sitemap",
+        "symfony",
+        "bundle"
+    ],
+    "autoload": {
+        "psr-4": { "Werkspot\\Bundle\\StatsdBundle\\": "" }
+    },
+    "authors": [
+        {
+            "name": "Thanos Polymeneas",
+            "email": "zinbiel@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "symfony/routing": "*",
+        "symfony/http-kernel": "*",
+        "symfony/framework-bundle": "*",
+        "symfony/finder": "*",
+        "symfony/browser-kit": "*",
+        "symfony/twig-bridge": "*",
+        "symfony/twig-bundle": "*",
+        "domnikl/statsd": "^2.2"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.4"
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
