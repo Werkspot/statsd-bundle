@@ -1,6 +1,5 @@
 # Werkspot statsd bundle
 
-[![Travis build status](https://travis-ci.org/Werkspot/statsd-bundle.svg?branch=master)](https://travis-ci.org/Werkspot/sitemap-bundle)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Werkspot/statsd-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Werkspot/statsd-bundle/?branch=master)
 
 ### Install
